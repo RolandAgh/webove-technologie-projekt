@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ValoArt</title>
+    <link rel="icon" href="images/icon.png" type="image/png">
+	<link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="page-title">
+            <img src="images/icon.png" alt="Ikonka stránky">
+            <h1>ValoArt</h1>
+        </div>
+        <nav class="navbar">
+            <a href="index.html" class="active">Homepage</a>
+            <div class="dropdown">
+                <a class="dropbtn">Gallery</a>
+                <div class="dropdown-content">
+                    <a href="gallery1.html">Reyna</a>
+                    <a href="gallery2.html">Gekko</a>
+                    <a href="gallery3.html">Cypher</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="dropbtn">Art Guide</a>
+                <div class="dropdown-content">
+                    <a href="artguide1.html">Art Guide for Reyna</a>
+                    <a href="artguide2.html">Art Guide for Gekko</a>
+                    <a href="artguide3.html">Art Guide for Cypher</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="dropbtn">Story</a>
+                <div class="dropdown-content">
+                    <a href="lore1.html">Reyna's Lore</a>
+                    <a href="lore2.html">Gekko's Lore</a>
+                    <a href="lore3.html">Cypher's Lore</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+        <section id="intro">
+        <h2>Welcome to ValoArt web!</h2>
+        <p>This website was made to help artists and cosplayers get a better look at the characters in their favorite game valorant.
+		The website consists of a gallery with views of characters from every side and the ability to use magnifying glasses to take a closer look.
+		The art guide section gives an easily accessible color palette for each character that you can copy with a single click on the button and use it in your digital arts.
+		Last but not least, there is a page dedicated to a quick recap of the agent's backstory and also a Spotify list that gets you into the character vibe.</p>
+    </section>
+	
+	<section id="image-links">
+        <a href="https://x.com/fukurocos/status/1638388391896121344"><img src="images/cosp1.jpg" alt="Image 1"></a>
+        <a href="https://x.com/KateCosplay/status/1779937327017595375"><img src="images/cosp2.jpg" alt="Image 2"></a>
+        <a href="https://x.com/yong_tau_fu_art/status/1614157780474290179"><img src="images/art1.jpg" alt="Image 3"></a>
+        <a href="https://x.com/JESTERKARD/status/1579970163054477312"><img src="images/art2.jpg" alt="Image 4"></a>
+    </section>
+
+    <section id="form">
+        <h2>Contact form</h2>
+        <form id="contact-form">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <div>
+             <label for="subscribe" style="margin-right: 10px;">Subscribe for news</label>
+                <input type="checkbox" id="subscribe" name="subscribe">
+            </div>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+ 
+
+    <footer>
+	   <section id="ratings">
+        <h2>Website rating</h2>
+        <table id="ratingsTable">
+            <thead>
+                <tr>
+                    <th>About</th>
+                    <th>Rating</th>
+                    <th>Comment</th>
+                </tr>
+            </thead>
+            <tbody id="ratingsBody">
+            </tbody>
+        </table>
+    </section>
+        <p>&copy; 2024 Roland Agh</p>
+    </footer>
+
+</body>
+</html>

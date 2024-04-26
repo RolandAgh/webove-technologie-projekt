@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galéria - Môj Web Portál</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="gallery.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Môj Web Portál</h1>
+	<nav class="navbar">
+    <a href="index.html" class="active">Domov</a>
+    <div class="dropdown">
+        <a class="dropbtn">Galeria</a>
+        <div class="dropdown-content">
+            <a href="gallery1.html">Reyna</a>
+            <a href="gallery2.html">Gekko</a>
+            <a href="gallery3.html">Cypher</a>
+        </div>
+    </div>
+    <a href="about.html">O nás</a>
+    <a href="contact.html">Kontakt</a>
+</nav>
+
+    </header>
+    
+<section id="gallery">
+    <div class="slideshow-container">
+        <div class="slides">
+            <div class="slide">
+                <img src="images/gekkoM.jpg" alt="Image 1">
+            </div>
+            <div class="slide">
+                <img src="images/gekko1.jpg" alt="Image 2">
+            </div>
+			<div class="slide">
+                <img src="images/gekko2.jpg" alt="Image 3">
+            </div>
+			<div class="slide">
+                <img src="images/gekko3.jpg" alt="Image 4">
+            </div>
+			<div class="slide">
+                <img src="images/gekko4.jpg" alt="Image 5">
+            </div>
+            <!-- Sem pridajte ďalšie kontajnery slajdov s ďalšími obrázkami -->
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+</section>
+
+
+
+
+
+
+
+    <footer>
+        <p>&copy; 2024 Môj Web Portál</p>
+    </footer>
+</body>
+</html>

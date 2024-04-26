@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ValoArt</title>
+    <link rel="icon" href="images/icon.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="gallery.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="page-title">
+            <img src="images/icon.png" alt="Ikonka stránky">
+            <h1>ValoArt</h1>
+        </div>
+        <nav class="navbar">
+            <a href="index.html" class="active">Homepage</a>
+            <div class="dropdown">
+                <a class="dropbtn">Gallery</a>
+                <div class="dropdown-content">
+                    <a href="gallery1.html">Reyna</a>
+                    <a href="gallery2.html">Gekko</a>
+                    <a href="gallery3.html">Cypher</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="dropbtn">Art Guide</a>
+                <div class="dropdown-content">
+                    <a href="artguide1.html">Art Guide for Reyna</a>
+                    <a href="artguide2.html">Art Guide for Gekko</a>
+                    <a href="artguide3.html">Art Guide for Cypher</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="dropbtn">Story</a>
+                <div class="dropdown-content">
+                    <a href="lore1.html">Reyna's Lore</a>
+                    <a href="lore2.html">Gekko's Lore</a>
+                    <a href="lore3.html">Cypher's Lore</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section style="text-align: center;">
+    <h1>Color-pallete picker</h1>
+    <p>Here, you can copy colors from each agent's palette. Just by clicking the buttons.</p>
+	</section>   
+    <section id="art-guide">
+        <div class="art-container">
+            <img src="images/image3.jpg" alt="Artwork" style="width: 1536px; height: 864px;">
+        </div>
+        <div class="buttons-container">
+            <button class="copy-button" data-text="#DFDFD5" style="background-color: #DFDFD5;color:black;">#DFDFD5</button>
+            <button class="copy-button" data-text="#75513B" style="background-color: #75513B;">#75513B</button>
+            <button class="copy-button" data-text="#35405E" style="background-color: #35405E;">#35405E</button>
+            <button class="copy-button" data-text="#333134" style="background-color: #333134;">#333134</button>
+            <button class="copy-button" data-text="#C87847" style="background-color: #C87847;">#C87847</button>
+			<button class="copy-button" data-text="#46E0E2" style="background-color: #46E0E2;color:black;">#46E0E2</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Roland Agh</p>
+    </footer>
+<script>
+        document.querySelectorAll('.copy-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const text = button.dataset.text;
+                navigator.clipboard.writeText(text).then(() => {
+                    alert('Coppied: ' + text);
+                }).catch(err => {
+                    console.error('Error: ', err);
+                });
+            });
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "ratings": [
+    {
+      "product": "Game",
+      "rating": 1,
+      "comment": "Nerf Reyna and the Instalockers"
+    },
+    {
+      "product": "Website idea",
+      "rating": 5,
+      "comment": "Hey, i am an artist and i find this website really helpful :)"
+    },
+	    {
+      "product": "Game",
+      "rating": 4,
+      "comment": "Site looks good but replay system when???"
+    }
+  ]
+}
